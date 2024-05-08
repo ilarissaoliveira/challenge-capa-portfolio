@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@400;600&display=swap'); /*A fonte online importada para o css*/
+
+*{              /*Serve para resetar a configuração padrao das bordas e margens*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh; /*Serve para ajudar a 100% da tela do navegador  */
+    box-sizing: border-box; /*Serve para ajustar o elemento "filho" dentro do elemento "pai"*/
+    background-color: black;
+    color: #F6F6F6;
+}
+
+.titulo-destaque { /*ele sabe que é uma classe quando eu inicio com um ponto */
+    color: #22D4FD;
+}
+
+.apresentacao { /*Isso se chama "Flexbox" tem varias formas de organizar o elemento filho e o elemento pai*/
+    margin: 10%;
+    display: flex; /*usar sempre que utilizar o Flexbox no elemento PAI*/
+    align-items: center; /*alinha os itens deixando no centro conforme o maior item, no caso é a imagem*/
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo { /*Altura e largura do que esta dentro do header (Titulo, paragrafo, links)*/
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /*espaçamento entre o texto acima e o botão*/
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px; /*Tamanho da fonte do titulo*/
+    font-family: 'Krona One', sans-serif; /*utilizando a fonte que foi importada (a forma escreve tem no proprio site)*/
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 24px; /*Tamanho da fonte do paragrafo*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentcao__links__link { /*tudo relacionado aos botoes*/
+    background-color: #22D4FD; /*cor dde fundo*/
+    width: 280px;
+    text-align: center; /*Alinha o texto*/
+    border-radius: 16px; /*Arredondamento de bordas*/
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0; /*o primeiro valor é vertical e o segundo é da horizontal*/
+    text-decoration: none; /*tira a decoração padrao que já vem, no caso, o sublinhado do texto*/
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
