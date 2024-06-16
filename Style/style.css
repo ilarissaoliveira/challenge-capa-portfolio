@@ -46,6 +46,7 @@ body {
     display: flex; /*usar sempre que utilizar o Flexbox no elemento PAI*/
     align-items: center; /*alinha os itens deixando no centro conforme o maior item, no caso é a imagem*/
     justify-content: space-between;
+    gap: 82px;
 }
 
 .apresentacao__conteudo { /*Altura e largura do que esta dentro do header (Titulo, paragrafo, links)*/
@@ -116,4 +117,24 @@ body {
     font-family: var(--font-secundaria);
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media (max-width: 1.200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
 }
