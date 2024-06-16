@@ -34,7 +34,7 @@ body {
 
 .cabecalho__menu__link {
     font-family: var(--font-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem; /*Tamanho da fonte do titulo com responsividade (rem)*/
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none; /*tira a decoração padrao que já vem, no caso, o sublinhado do texto*/
@@ -56,7 +56,7 @@ body {
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 36px; /*Tamanho da fonte do titulo*/
+    font-size: 2.25rem;
     font-family: var(--font-primaria); /*utilizando a fonte que foi importada (a forma escreve tem no proprio site)*/
 }
 
@@ -65,7 +65,7 @@ body {
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 24px; /*Tamanho da fonte do paragrafo*/
+    font-size: 1.5rem; /*Tamanho da fonte do paragrafo*/
     font-family: var(--font-secundaria);
 }
 
@@ -80,7 +80,7 @@ body {
 .apresentacao__links__subtitulo{
     font-family: var(--font-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .apresentcao__links__link { /*tudo relacionado aos botoes*/
@@ -92,7 +92,7 @@ body {
     width: 378px;
     text-align: center; /*Alinha o texto*/
     border-radius: 8px; /*Arredondamento de bordas*/
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 21.5px 0; /*o primeiro valor é vertical e o segundo é da horizontal*/
     text-decoration: none;
@@ -110,6 +110,6 @@ body {
     background-color:var(--cor-terciaria);
     text-align: center;
     font-family: var(--font-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
